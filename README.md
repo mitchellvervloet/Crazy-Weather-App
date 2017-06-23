@@ -26,3 +26,15 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+##beschrijving van de app
+
+Voor deze opdracht wil ik een weather app gaan maken. Op deze weather app moet je als gebruiken kunnen zoeken naar elke willekeurige locatie. Ik maak hierbij gebruik van de
+OpenWeatherApp Api die je redleijk wat vrijheid geeft om er gebruik van te maken. 
+
+De applicatie bevat het volgende:
+* zoekfunctie naar stad/dorp
+* Weer op huidige locatie
+* huidige weersstatus
+* 24-uurs voorspelling
+* 5-daagse voorspelling
