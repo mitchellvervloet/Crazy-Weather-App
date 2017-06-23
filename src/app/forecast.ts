@@ -1,3 +1,4 @@
+//class definitie voor forecasts components
 export class Forecast {
 
     constructor(public day: string,

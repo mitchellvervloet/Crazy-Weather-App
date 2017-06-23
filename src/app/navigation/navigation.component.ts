@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { WeatherService } from "../weather.service";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'cwa-navigation',
@@ -11,32 +10,16 @@ export class NavigationComponent implements OnInit {
   cityName: string;
   searchValue: string;
 
-  constructor(private route: ActivatedRoute, private router: Router, private ws: WeatherService) {
+  constructor(private route: ActivatedRoute) {
 
-    // this.cityName = route.snapshot.params['cityname'];
-    // console.log(this.cityName);
-
+    //Hier wordt naar de huidige rouyter gekeken en naar de parameters die daarbij horen. De value van parameter cityname wordt in een variabele gestopt die bereikbaar is in de view.
     route.params.subscribe(val => {
-      // put the code from `ngOnInit` here
       this.cityName = val['cityname'];
-      console.log('stad is '+this.cityName);
-
     });
 
   }
 
   ngOnInit() {
-
-    this.route.params.subscribe(val => {
-      // put the code from `ngOnInit` here
-      this.cityName = val['cityname'];
-      console.log('stad is '+this.cityName);
-
-    });
-
-
-    // this.cityName = this.route.snapshot.params['cityname'];
-    // console.log(this.cityName);
 
   }
 
