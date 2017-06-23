@@ -1,0 +1,27 @@
+.container {
+
+}
+
+.container .day {
+    background-color: lightblue;
+    border: 1px solid white;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 400px;
+    text-align: center;
+    width: 25%;
+}
+
+.container .day h2,
+.container .day h3 {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container .day {
+
+}
+
+.container .day {
+
+}

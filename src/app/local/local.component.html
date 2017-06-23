@@ -1,12 +1,14 @@
-<div *ngIf="myLocationWeather" class="container">
-  <div class="img">
-    <img src="http://weather.omgez911.com/icons/{{ myLocationWeather.icon }}.png" alt="">
+<div *ngIf="myLocationWeather" class="day">
+  <div class="center">
+    <span class="title">Mijn locatie</span>
+    <div class="img">
+      <img src="http://weather.omgez911.com/icons/{{ myLocationWeather.icon }}.png" alt="">
+    </div>
+    <div class="content">
+      <h1>{{ myLocationWeather.cityName }}</h1>
+      <h2>{{ myLocationWeather.temp }}&deg;C</h2>
+    </div>
   </div>
-  <h1 class="local-name">{{ myLocationWeather.cityName }}</h1>
-  <h2 class="local-temp">{{ myLocationWeather.temp }}&deg;C</h2>
-  <!--<h3>{{ myLocationWeather.weatherKind }}</h3>-->
-  <h4>max: {{ myLocationWeather.tempMax }}&deg;C</h4>
-  <h4>min: {{ myLocationWeather.tempMin }}&deg;C</h4>
 </div>
 
 <!--<form (ngSubmit)="onSubmit(form)" #form="ngForm">-->

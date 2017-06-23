@@ -37,7 +37,8 @@ export class ForecastComponent implements OnInit {
         const temporary = new Forecast(data.list[i].dt_txt,
             data.list[i].weather[0].icon,
             data.list[i].main.temp_max,
-            data.list[i].main.temp_min)
+            data.list[i].main.temp_min,
+            data.list[i].main.temp)
         this.cityForecast.push(temporary);
       }
     });

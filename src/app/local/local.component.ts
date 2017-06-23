@@ -37,7 +37,6 @@ export class LocalComponent implements OnInit {
         this.myLocationWeather = new CurrentWeather(data.name,
           data.main.temp,
           data.weather[0].icon,
-          data.weather[0].description,
           data.main.temp_max,
           data.main.temp_min);
       })

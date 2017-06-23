@@ -1,0 +1,37 @@
+.container {
+
+}
+
+.container .day {
+    background-color: lightblue;
+    border: 1px solid white;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 200px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+
+.container .day h2,
+.container .day h3 {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container .day .icon {
+    float: left;
+    margin-right: 30px;
+}
+
+.container .day img {
+    float: left;
+    height: 150px;
+    padding: 25px 0;
+}
+
+.container .day .content {
+    float: left;
+    height: 120px;
+    padding: 40px 0;
+}

@@ -1,18 +1,24 @@
-.container .local-name,
-.container .local-temp {
+.day {
+    text-align: center;
+}
+
+.day {
+
+}
+
+.day {
+
+}
+
+.day .local-name,
+.day .local-temp,
+.day h4 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.container .img {
-    /*left: 10px;*/
-    /*position: absolute;*/
-    /*top: 10px;*/
-    /*width: 125px;*/
-    display: block;
-    float: left;
-    width: 125px;
+.day .img {
 }
 
-.container .img img {
-    width: 100%;
+.day .img img {
+    /*width: 100%;*/
 }
