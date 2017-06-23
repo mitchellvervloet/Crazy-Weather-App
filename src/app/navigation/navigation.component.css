@@ -1,0 +1,38 @@
+#tabmenu {
+    background-color: red;
+    height: 50px;
+    width: 100%;
+}
+
+#tabmenu ul {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#tabmenu ul li {
+    background-color: lightgrey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 33.33%;
+}
+
+#tabmenu ul li:hover,
+#tabmenu ul li:active,
+#tabmenu ul li:focus {
+    background-color: grey;
+}
+
+#tabmenu ul li a {
+    color: white;
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    width: 100%;
+}

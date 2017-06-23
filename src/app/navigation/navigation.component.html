@@ -1,0 +1,7 @@
+<nav id="tabmenu">
+  <ul>
+    <li><a [routerLink]="['../../current', cityName]">Huidige weer in {{ cityName }}</a></li>
+    <li><a [routerLink]="['../../detailforecast', cityName]">24-uurs van {{ cityName }}</a></li>
+    <li><a [routerLink]="['../../longforecast', cityName]">5-daagse van {{ cityName }}</a></li>
+  </ul>
+</nav>

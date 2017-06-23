@@ -7,11 +7,11 @@ import { Forecast } from '../forecast';
 import { WeatherService } from '../weather.service';
 
 @Component({
-  selector: 'cwa-forecast',
-  templateUrl: './forecast.component.html',
-  styleUrls: ['./forecast.component.css']
+  selector: 'cwa-detail-forecast',
+  templateUrl: './detail-forecast.component.html',
+  styleUrls: ['./detail-forecast.component.css']
 })
-export class ForecastComponent implements OnInit {
+export class DetailForecastComponent implements OnInit {
 
   cityName: string;
   forecastForm: FormGroup;
@@ -33,7 +33,7 @@ export class ForecastComponent implements OnInit {
     this.cityForecast.splice(0, this.cityForecast.length);
     this.weatherService.fiveDayForecast(this.cityName).subscribe((data) => {
       console.log(data);
-      for(let i = 0; i < data.list.length; i += 8) {
+      for(let i = 0; i < 9; i++) {
         const temporary = new Forecast(data.list[i].dt_txt,
             data.list[i].weather[0].icon,
             data.list[i].main.temp_max,

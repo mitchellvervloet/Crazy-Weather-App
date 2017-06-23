@@ -6,28 +6,31 @@ import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CurrentComponent } from './current/current.component';
+import { LocalComponent } from './local/local.component';
 import { ForecastComponent } from './forecast/forecast.component';
+import { DetailForecastComponent } from './detail-forecast/detail-forecast.component';
 import { weatherRouting } from './weather.routing';
 import { WeatherService } from './weather.service';
-import { ResolveLocationService } from './resolve-location.service';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CurrentComponent,
-    ForecastComponent
+    LocalComponent,
+    ForecastComponent,
+    DetailForecastComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     weatherRouting,
-    FormsModule,
-    ReactiveFormsModule
+    FormsModule
   ],
   providers: [
-    WeatherService,
-    ResolveLocationService
+    WeatherService
   ],
   bootstrap: [AppComponent]
 })

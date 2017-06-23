@@ -1,6 +1,23 @@
-<nav>
-  <ul>
-    <li><a [routerLink]="['/']">Huidige weer</a></li>
-    <li><a [routerLink]="['forecast']">5 dagen vooruit</a></li>
-  </ul>
-</nav>
+<!--<nav>-->
+  <!--<ul>-->
+    <!--<li><a [routerLink]="['/']">Huidige weer</a></li>-->
+    <!--<li><a [routerLink]="['forecast']">5 dagen vooruit</a></li>-->
+  <!--</ul>-->
+<!--</nav>-->
+
+<div id="header">
+
+    <div id="local-weather">
+        <cwa-local></cwa-local>
+    </div>
+    <div id="form-search">
+        <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+            <input type="text" ngModel name="cityName" placeholder="Name of the city">
+            <button name="button">search</button>
+        </form>
+    </div>
+
+</div>
+
+
+<!--<router-outlet></router-outlet>-->

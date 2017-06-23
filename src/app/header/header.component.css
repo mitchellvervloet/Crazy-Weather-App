@@ -1,0 +1,47 @@
+#header {
+    background-color: green;
+    height: 250px;
+}
+
+#header #local-weather {
+    /*background-color: yellow;*/
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+#header #form-search {
+    /*background-color: blue;*/
+    display: table;
+    float: left;
+    height: 100%;
+    text-align: center;
+    width: 50%;
+}
+
+#header #form-search form {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#header #form-search input {
+    border: 2px solid grey;
+    display: inline-flex;
+    height: 40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding: 0 5px;
+    width: 200px;
+}
+
+#header #form-search button {
+    background-color: grey;
+    color: white;
+    border: none;
+    display: inline-flex;
+    height: 44px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding: 0 15px;
+}
